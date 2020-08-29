@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+             <a href="index.html">Strona główna</a> 
+             <a href="nauka-html.html">Nauka HTML</a> 
+             <a href="nauka-css.html">Nauka CSS</a> 
+             <a href="nauka-java-script.html">Nauka Java Script</a> 
+            </nav>
+    </header>
+    <main>
+        <header id="top">
+            <h1>
+                NAUKA CSS:)</h1>
+        </header>
+        <section>
+         <span class="blekitny"> CSS odpowiada za prezentcję </class> </span>            <h2 class="czerwono-czarny"> Budowa reguły CSS</h2>
+            selektor - klamra { <br>
+                właściwość: wartość;<br>
+                zamknięcie klamry} <br>
+                Aby stylować po elementach używamy znacznik - style. Styl przy znaczniku z wykorzystaniem atrybutu <i>style</i> nazywamy stylem inline. Jednak najczęściej tworzy się zewnętrzny plik, gdzie stylujemy.Wstawiamy wtedy w sekcji head znacznik "link href..."<br>
+                <br>
+                <img src="css-declaration-small.png" alt="css budowa reguły">
+                <br>
+                Możemy pogrupować elementy za pomocą klas wykorzystując arybut (class).<br>
+                znacznik class="nazwa" treść znacznik <br>
+                kropka to selsktor klasy (.nazwa)<br>
+                <h2> Specyficzność w CSS</h2>
+                Określamy ilościowo poszczególne elementy w kolejności: important, znacznik inline (style=""), stylowanie po id (#name), stylowanie po klasach (.name),oraz element. Po czym określamy która liczba jest wieksza, ten styl bedzie widoczny. <br>
+        </section><br>
+        <footer> <b>Frontend jest fajny.</b><br> <a href="#top">Wróć na górę</a></footer>
+    </main>
+</body>
+
+</html>
