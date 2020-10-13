@@ -33,10 +33,44 @@
                 <br>
                 Możemy pogrupować elementy za pomocą klas wykorzystując arybut (class).<br>
                 znacznik class="nazwa" treść znacznik <br>
-                kropka to selsktor klasy (.nazwa)<br>
+                kropka to selektor klasy (.nazwa)<br>
                 <h2> Specyficzność w CSS</h2>
                 Określamy ilościowo poszczególne elementy w kolejności: important, znacznik inline (style=""), stylowanie po id (#name), stylowanie po klasach (.name),oraz element. Po czym określamy która liczba jest wieksza, ten styl bedzie widoczny. <br>
         </section><br>
+        <h3> WŁASNOŚCI</h3>
+        1. display: block - własność ustwiona domyśnie, oznacza, że treści ustawiają się jedna pod drugą przy wykorzystywaniu takich znaczników jak div, article, p, main czy section. Znacznikom, które nie mają domyślej własności <i>diplay: block</i> możemy ją również nadać, np. dla znalcznika linka a <br>
+        2. display: inline - własność, która ustawia elementy w jednej linii obok siebie <br>
+        3. display: inline-block - pozwala nadać dodatkowe własności elementom, które są dostępne tylko dla elemantów dislplay: block, np. własność width i high. W przypadku własności inline nie możemy nadać długości i szerokości naszym boxom, elementy zawsze będą ustawiane obok siebie. Ustawiając własność <i>display: inline-block</i> nasze elementy ustawią się w boxach obok siebie w zależności od szerokości strony<br>
+- width - szerokość pudełka <br>
+- high - wysokość pudełka <br>
+- max width/high - maksymalny rozmiar pudełka, jeżeli treści mamy więcej niż maksymalny wymiar będzie ona wychodzić poza obszar pudełka <br>
+- min width/high - minimalny rozmiar pudełka, jeżeli nie mieści nam się w oknie pojawia się możliwość scrolowania <br>
+- overflow - może mieć wartość <i> hidden</i>, czyli chowa wystającą treść, <i> auto</i>, czyli dorzuca nam scrola w elemencie, a domyślnie ma wartość <i>visible</i>
+4. Position: własności, które dają możliwość ustawienia elementu w konkretnym miejscu, podobnie jak w siatce współrzędnych.<br>
+- static - własność domyślna <br>
+- relative - pozycja zalezna od innego elementu <br>
+- absolute - dookreślamy pozycję przez top, right, bottom, left <br>
+- z-index - dot. widocznej warstwy, w sytuacji gdy elementy się nakładają na siebie<br>
+- fixed - element nie zmienia swojej pozycji pomimo scrolowania<br>
+- sticky - element jest przyklejony wewnątrz innego elementu rodzica i po nim "wędruje"<br>
+5. Float - nie służy do budowania layotów, służy do opływania innego elementu <br>
+<h3>JEDNOSTKI</h3>
+- zero - można zapisywać bez jednoski, zero zawsze jest zerem <br>
+- jednostki zawsze trzymamy obok liczby, nie wstawiamy spacji, np. 50px <br>
+- podstawową jednostką są pixele - px<br>
+- procenty - określamy w stosunku do rodzica, np. 50% szerokości okna lub 75% wysokości większego pudełka <br>
+- vw - view port width - zależy od wielkości okna, nie jest zależny od wymiarów "rodzica", np. 50vw - oznacza 50% aktualnej szerokości okna <br>
+- vh - view port high - jw. dot. wysokości <br>
+<h3>BOX MODEL</h3>
+Wszystkie lementy na stronie internetowej znajdują się w takim "niewidzialnym" pudełku (prostokącie). Box model składa się z elementów:<br>
+- margin - określa wartość o jaką możemy się odsunąć od innych elementów na stronie, zapisujemy tak samo jak padding. Marginesy się sumują, czyli mając margines 10 px elementy będą od siebie oddalone o 20 px (marginesy nie nakładają się na siebie). Margin: __px auto - właściwość, która wyśrodkuje nam element, ale przy jednoczesnym określeniu szerokości elementu. <br>
+- border - określa wymiary i styl, obramowania, np. zapis pełny: border-width: 3px, border-style: solid, border-color: blue; zapis skrótowy np.: border-top: 3px dashed #fe201a; własność <i>border-radius</i> pozwala nam zaokrąglić narożniki i promień wyrażony w pixelach; <br>
+- padding - margines wewnętrzny, znajduje się najbliżej naszego elementu; możemy określić wielkość padding-top, padding-right, padding-bottom, padding-left - w takiej samej kolekności możemy zapisać wymiary w jednej linijce, np. padding: 40px 20px 30px 40px (odpowiednio: top, right, bottom, left). Wpisując dwie wartoci liczbowe uzyskujemy wartości lustrzane, czyli pierwsza liczna dotyczy wymiaru góra i dół, druga wartość prawo i lewo. <br>
+- element
+<h3> BOX SIZING</h3>
+box-sizing: border-box - własność, która nam określa (wylicza) rozmiar całego elementu uwzględniając nasz określony padding i border. <br>
+
+
         <footer> <b>Frontend jest fajny.</b><br> <a href="#top">Wróć na górę</a></footer>
     </main>
 </body>
