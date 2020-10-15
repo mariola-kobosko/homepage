@@ -1,87 +1,132 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka HTML</a>
-            <a href="nauka-css.html">Nauka CSS</a>
-            <a href="nauka-java-script.html">Nauka Java Script</a>
-        </nav>
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="nauka-html.html">Nauka HTML</a>
+        <a href="nauka-css.html">Nauka CSS</a>
+        <a href="nauka-java-script.html">Nauka Java Script</a>
+      </nav>
     </header>
     <main>
-        <header id="top">
-            <h1> Mariola Kobosko - nauka frontendu :)</h1>
-        </header>
-        <img src="zamawiaj wygodnie.jpg" alt="kobieta nad wodospadem">
-        <section>
-            <h2> Skąd w ogóle taki pomysł?</h2>
-            <p> Mój narzeczony stwierdził, że taka wiedza przyda mi się w obecnej pracy. Dlatego też zakupił mi kurs
-                frontendu.</p>
-            <p>Stwierdziłam, że może to być całkiem fajna przygoda, a zdobyta wiedza i umiejętności uatrakcyjni moje CV, a także może mi się przydać w mojej codziennej pracy w <a
-                    href="https://sklep.bbstudio.eu/">sklepie</a> internetowym.</p>
-        </section>
-        <section>
-            <h2>Na czym polega nauka?</h2>
-            <p>Kurs trwa 13 tygodni. W każdym tygoniu należy zapoznać się z materiałami umieszczonymi na filmikach oraz
-                wykonać zadanie domowe. Jest to bardzo dobry sposób na naukę, gdyż wymusza praktykę na kursancie.</p>
-            <br>
-            <h1>Spis notatek</h1><br>
-            <a href="#t1">Tydzień pierwszy</a> <br>
-            <a href="#t2">Tydzień drugi</a><br>
-            <a href="#t3">Tydzień trzeci</a><br>
-            <a href="#t4">Tydzień czwarty</a><br>
-        </section>
-        <section id=t1>
-            <h3> Tydzień pierwszy</h3>
-            <p>Zapoznanie z planem szkolenia, niezbędnymi narzędziami, konfiguracja tych narzędzi, zapoznanie na grupie
-                na Slacku.</p>
-        </section>
-        <section id=t2>
-            <h3>Tydzień drugi</h3>
-            <p>Nauka podstaw języka html, CSS oraz pojęcia związane z Java Script. Właśnie praktykuję używanie
-                znaczników w języku html. </p>
-            <p>Semantyczny html - czyli mający znaczenie, nadajemy dodatkowe znaczenie treści, np. metaforyczne. </p>
-            <p>Aby stworzyć tzw. szklielet strony wciskamy ! a następnie tabulator. Kolejnym krokiem jest określenie
-                języka strony, domyślnie jest to język angielski (en), w przypadku języka polskiego wpisujemy pl.</p>
-            <p>Aby sformatować kod wciskamy komendę comand+shift+p wpisujemy <i>format.</i></p>
-            <p>Sprawdzamy poprawność kodu, ewentualne błędy przez <a href="https://validator.w3.org/nu/#textarea">walidator.</a></p>
-        </section>
-        <section id=t3>
-            <h3>Tydzień trzeci</h3>
-            <p><em>Robi się coraz trudniej...</em><br>
-                Kolejne lekcje to:<br>
-                - zapoznananie się z kolejnymi znacznikami kodu html. <br>
-                - tworzenie hiperłączy na stronie oraz między stronami <br>
-                - tworząc nazawy plików nie używamy spacji, ani polskich znaków, czy symboli. Najczęściej tworzymy nazwy
-                kebab case'em, np. nauka-java-script. <br>
-                - podstawy Java Scriptu<br>
-            - zapoznanie się z działaniem terminala i podstawowe komendy poruszania się w konsoli</p>
-            Pliki zawierające kod Java Script mają rozszerzenie . js
-            oraz mają swój znacznik <i>script</i>, który umieszczamy na końcu strony, przed zamknięciem znacznika <i>
-                body</i>
-            <h4>Odpowiedzi kodu http</h4>
-            200 - wszystko ok<br>
-            300 - szukasz w złym miejscu, przekieruję cię<br>
-            404 - nie mam tego czego potrzebujesz <br>
-            500 - błędy wewnętrzne serwera<br>
-        </section>
-        <section id=t4>
-            <h3>Tydzień czwarty</h3>
-            Poznajemy narzędzie o nazwie GIT - system kontroli wersji oraz tworzymy swoje konto na GitHubie.<br>
-        </section><br>
-        <footer> <b>Frontend jest fajny.</b><br> <a href="#top">Wróć na górę</a></footer>
+      <header id="top">
+        <br />
+        <h1 class="index-header">
+          <u> Mariola Kobosko - nauka frontendu :) </u>
+        </h1>
+      </header>
+      <img
+        class="portret"
+        src="zamawiaj wygodnie.jpg"
+        alt="kobieta nad wodospadem"
+      />
+      <section>
+        <h2>Skąd w ogóle taki pomysł?</h2>
+        <p>
+          Mój narzeczony stwierdził, że taka wiedza przyda mi się w obecnej
+          pracy. Dlatego też zakupił mi kurs frontendu.
+        </p>
+        <p>
+          Stwierdziłam, że może to być całkiem fajna przygoda, a zdobyta wiedza
+          i umiejętności uatrakcyjni moje CV, a także może mi się przydać w
+          mojej codziennej pracy w
+          <a href="https://sklep.bbstudio.eu/">sklepie</a> internetowym.
+        </p>
+      </section>
+      <section>
+        <h2>Na czym polega nauka?</h2>
+        <p>
+          Kurs trwa 13 tygodni. W każdym tygoniu należy zapoznać się z
+          materiałami umieszczonymi na filmikach oraz wykonać zadanie domowe.
+          Jest to bardzo dobry sposób na naukę, gdyż wymusza praktykę na
+          kursancie.
+        </p>
+        <br />
+        <h1>Spis notatek</h1>
+        <br />
+        <a href="#t1">Tydzień pierwszy</a> <br />
+        <a href="#t2">Tydzień drugi</a><br />
+        <a href="#t3">Tydzień trzeci</a><br />
+        <a href="#t4">Tydzień czwarty</a><br />
+      </section>
+      <section id="t1">
+        <h3>Tydzień pierwszy</h3>
+        <p>
+          Zapoznanie z planem szkolenia, niezbędnymi narzędziami, konfiguracja
+          tych narzędzi, zapoznanie na grupie na Slacku.
+        </p>
+      </section>
+      <section id="t2">
+        <h3>Tydzień drugi</h3>
+        <p>
+          Nauka podstaw języka html, CSS oraz pojęcia związane z Java Script.
+          Właśnie praktykuję używanie znaczników w języku html.
+        </p>
+        <p>
+          Semantyczny html - czyli mający znaczenie, nadajemy dodatkowe
+          znaczenie treści, np. metaforyczne.
+        </p>
+        <p>
+          Aby stworzyć tzw. szklielet strony wciskamy ! a następnie tabulator.
+          Kolejnym krokiem jest określenie języka strony, domyślnie jest to
+          język angielski (en), w przypadku języka polskiego wpisujemy pl.
+        </p>
+        <p>
+          Aby sformatować kod wciskamy komendę comand+shift+p wpisujemy
+          <i>format.</i>
+        </p>
+        <p>
+          Sprawdzamy poprawność kodu, ewentualne błędy przez
+          <a href="https://validator.w3.org/nu/#textarea">walidator.</a>
+        </p>
+      </section>
+      <section id="t3">
+        <h3>Tydzień trzeci</h3>
+        <p>
+          <em>Robi się coraz trudniej...</em><br />
+          Kolejne lekcje to:<br />
+          - zapoznananie się z kolejnymi znacznikami kodu html. <br />
+          - tworzenie hiperłączy na stronie oraz między stronami <br />
+          - tworząc nazawy plików nie używamy spacji, ani polskich znaków, czy
+          symboli. Najczęściej tworzymy nazwy kebab case'em, np.
+          nauka-java-script. <br />
+          - podstawy Java Scriptu<br />
+          - zapoznanie się z działaniem terminala i podstawowe komendy
+          poruszania się w konsoli
+        </p>
+        Pliki zawierające kod Java Script mają rozszerzenie . js oraz mają swój
+        znacznik <i>script</i>, który umieszczamy na końcu strony, przed
+        zamknięciem znacznika <i> body</i>
+        <h4>Odpowiedzi kodu http</h4>
+        200 - wszystko ok<br />
+        300 - szukasz w złym miejscu, przekieruję cię<br />
+        404 - nie mam tego czego potrzebujesz <br />
+        500 - błędy wewnętrzne serwera<br />
+      </section>
+      <section id="t4">
+        <h3>Tydzień czwarty</h3>
+        Poznajemy narzędzie o nazwie GIT - system kontroli wersji oraz tworzymy
+        swoje konto na GitHubie.<br />
+        - git pozwala na sprawne zarządzanie zmianami w projekcie, działa
+        lokalnie<br />
+        - commitujemy jak wprowadzamy jakąś widoczną zmianę do projektu <br />
+        - podstawowy flow to polecenia: git add . / git commit -m "....."/ git
+        push <<br />
+      </section>
+      <br />
+      <footer>
+        <b>Frontend jest fajny.</b><br />
+        <a href="#top">Wróć na górę</a>
+      </footer>
     </main>
-    <script src="main.js">
-    </script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
