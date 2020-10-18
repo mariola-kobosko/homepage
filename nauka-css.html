@@ -9,11 +9,11 @@
 
   <body>
     <header>
-      <nav>
-        <a href="index.html">Strona główna</a>
-        <a href="nauka-html.html">Nauka HTML</a>
-        <a href="nauka-css.html">Nauka CSS</a>
-        <a href="nauka-java-script.html">Nauka Java Script</a>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+        <a class="navigation__link" href="nauka-java-script.html">Nauka Java Script</a>
       </nav>
     </header>
     <main>
@@ -21,11 +21,12 @@
         <h1>NAUKA CSS:)</h1>
       </header>
       <section>
-        <span class="blekitny"> CSS odpowiada za prezentcję </span>
-        <h2 class="czerwono-czarny">Budowa reguły CSS</h2>
-        selektor - klamra { <br />
-        właściwość: wartość;<br />
+        <span> <i>CSS odpowiada za prezentcję</i> </span>
+        <h2>Budowa reguły CSS</h2>
+        selektor - klamra { 
+        właściwość: wartość;
         zamknięcie klamry} <br />
+        <br>
         Aby stylować po elementach używamy znacznik - <i>style</i>. Wówczas do
         każdego znacznika oddzielnie dodajemy jego styl w pliku html. Styl przy
         znaczniku z wykorzystaniem atrybutu <i>style</i> nazywamy stylem inline.
@@ -35,7 +36,7 @@
         wyróżnić np. jeden tag od innych wprowadzamy klasy lub oznaczamy przez
         id.<br />
         <br />
-        <img src="css-declaration-small.png" alt="css budowa reguły" />
+        <img src="css-declaration-small.png" alt="css budowa reguły" width="512px"/>
         <br />
         Możemy pogrupować elementy za pomocą klas wykorzystując arybut
         (class).<br />
@@ -120,14 +121,18 @@
       box-sizing: border-box - własność, która nam określa (wylicza) rozmiar
       całego elementu uwzględniając nasz określony padding i border. <br />
       <h3>BEM = block element modifier</h3>
-      <b>B</b> - Block - nadrzędny element <br>
-      <b>E</b> - Element - część bloku (nie musi być bezpośrednim dzieckiem)<br>
-      <b>M</b> - Modifier - modyfikator - jeśli element występuje w kilku wariacjach tworzymy dodatkową klasę <br>
-      Zapisujemy w formacie: block__element--modifier <br>
-      Tworząc nasz projekt za pomocą BEM: <br>
-      1. Szukamy elementów na stronie i dzielimy ją na bloki<br>
-      2. Myślimy o elementach składowych / robimy analizę-selekcję<br>
-      3.Tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze zmieniamy tylko unikalne dla niego wartości, nie przepisujemy rzeczy z klasy bazowej). <br>
+      <b>B</b> - Block - nadrzędny element <br />
+      <b>E</b> - Element - część bloku (nie musi być bezpośrednim dzieckiem)<br />
+      <b>M</b> - Modifier - modyfikator - jeśli element występuje w kilku
+      wariacjach tworzymy dodatkową klasę <br />
+      Zapisujemy w formacie: block__element--modifier <br />
+      Tworząc nasz projekt za pomocą BEM: <br />
+      1. Szukamy elementów na stronie i dzielimy ją na bloki<br />
+      2. Myślimy o elementach składowych / robimy analizę-selekcję<br />
+      3.Tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze
+      zmieniamy tylko unikalne dla niego wartości, nie przepisujemy rzeczy z
+      klasy bazowej). <br />
+      <br>
       <footer>
         <b>Frontend jest fajny.</b><br />
         <a href="#top">Wróć na górę</a>

@@ -10,12 +10,12 @@
 
 <body>
     <header>
-        <nav>
-             <a href="index.html">Strona główna</a> 
-             <a href="nauka-html.html">Nauka HTML</a> 
-             <a href="nauka-css.html">Nauka CSS</a> 
-             <a href="nauka-java-script.html">Nauka Java Script</a> 
-            </nav>
+        <nav class="navigation">
+            <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+            <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+            <a class="navigation__link" href="nauka-java-script.html">Nauka Java Script</a>
+          </nav>
     </header>
     <main>
         <header id="top">
@@ -31,17 +31,18 @@
     - CONST - zmienne mające stałe połączenie z jedną wartością, np. const name = 'Maciek'; const age = 31; <br>
 -VAR - używane coraz rzadziej <br>
 <h2>Typy proste w JS (primitives)</h2>
-- String - tekst, otaczamy ' lub " (zalecam ')<br>
-- Number - liczba<br>
-- Bigint - duża liczba ;) większa niż 253<br>
-- boolean - true lub false<br>
-- null - wartość celowo niezdefiniowana<br>
-- undefined - brak definicji<br>
-- *symbol - tworzy "unikalne opakowanie"<br>
+- <b>String</b> - tekst, otaczamy ' lub " (zalecam ')<br>
+- <b>Number</b> - liczba<br>
+- <b>Bigint</b> - duża liczba ;) większa niż 253<br>
+- <b>Boolean </b>- true lub false<br>
+- <b>Null </b>- wartość celowo niezdefiniowana<br>
+- <b>Undefined </b>- brak definicji<br>
+- <b>*symbol </b>- tworzy "unikalne opakowanie"<br>
 <br>
 - Aby dowiedzieć się jakiego typu jest zmienna używamy polecenia "typeof"<br>
 - Nie możemy zmieniać wartości primitive values w JS. To co zmieniamy to połączenie między nimi, a zmiennymi.
         </section>
+        <br>
         <footer> <b>Frontend jest fajny.</b><br> <a href="#top">Wróć na górę</a></footer>
     </main>
 </body>
