@@ -1,4 +1,10 @@
+html {
+  box-sizing: border-box;
+}
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 footer { 
   color: azure;
   background-color:#260F26;
@@ -8,9 +14,20 @@ footer {
 body {
   background-color: fefefe;
 }
-main {
-    width: 1000px;
+.main {
+    max-width: 1000px;
     margin: 0px auto;
+}
+.main__header{
+
+}
+.main__heading {
+  color: #07BEB8;
+  border: 0.2px solid #07BEB8;
+  width: 600px;
+  padding: 30px;
+  margin: 0px auto;
+  display: block;
 }
 h1 {
   color: #251F47;
@@ -29,6 +46,26 @@ h4 {
   a {
     color: #07BEB8;
   }
+
+.about {
+
+}
+.about__description {
+
+}
+.about__heading {
+  color: #404E7C;
+}
+.about__link {
+  color: #07BEB8;
+}
+.about__portrait {
+  border: 10px solid #251F47;
+  margin: 50px auto;
+  height: 400px;
+  width: 500px;
+  display: block;
+}
 .navigation {  
   background-color:#260F26;
   width: 100%;
@@ -48,19 +85,12 @@ h4 {
   color: #07BEB8;
   background-color: #F5E3E0;
 }
-.index-header {
-  color: #07BEB8;
-  border: 0.2px solid #07BEB8;
-  width: 600px;
-  padding: 30px;
-  margin: 0px auto;
-  display: block;
-}
 
-.portrait {
-  border: 10px solid #251F47;
-  margin: 50px auto;
-  height: 400px;
-  width: 500px;
-  display: block;
+.notes__heading {
+  color: #251F47;
+  border: 0.2px solid #7BE0B8;
+  padding: 10px;
+}
+.notes__link {
+  color: #07BEB8;
 }

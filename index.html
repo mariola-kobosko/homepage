@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -16,47 +17,53 @@
         <a class="navigation__link" href="nauka-java-script.html">Nauka Java Script</a>
       </nav>
     </header>
-    <main>
+    <main class="main">
         <br />
-        <header id="top">
-          <h1 class="index-header">
+        <header class="main__header" id="top">
+          <h1 class="main__heading">
             <u> Mariola Kobosko - nauka frontendu :) </u>
           </h1>
       </header>
-      <br>
+      <section class="about">
       <img
-        class="portrait"
+        class="about__portrait"
         src="zamawiaj wygodnie.jpg"
-        alt="kobieta nad wodospadem"
-      />
+        alt="kobieta nad wodospadem"/>
+        <h2 class="about__heading">Kim jestem</h2>
+        <p class="about__description">
+        Mam na imię Mariola i na codzień zajmuję się marketingiem sklepu internetowego z sukienkami.
+        </p>
+    </section>
+      <h2 class="dom__js"></h2>
       <section>
-        <h2>Skąd w ogóle taki pomysł?</h2>
-        <p>
+        <h2 class="about__heading">Skąd w ogóle taki pomysł?</h2>
+        <p class="about__description">
           Mój narzeczony stwierdził, że taka wiedza przyda mi się w obecnej
           pracy. Dlatego też zakupił mi kurs frontendu.
         </p>
-        <p>
+        <p class="about__description">
           Stwierdziłam, że może to być całkiem fajna przygoda, a zdobyta wiedza
           i umiejętności uatrakcyjni moje CV, a także może mi się przydać w
           mojej codziennej pracy w
-          <a href="https://sklep.bbstudio.eu/">sklepie</a> internetowym.
+          <a class="about__link" href="https://sklep.bbstudio.eu/">sklepie</a> internetowym.
         </p>
       </section>
       <section>
-        <h2>Na czym polega nauka?</h2>
-        <p>
+        <h2 class="about__heading">Na czym polega nauka?</h2>
+        <p class="about__description">
           Kurs trwa 13 tygodni. W każdym tygoniu należy zapoznać się z
           materiałami umieszczonymi na filmikach oraz wykonać zadanie domowe.
           Jest to bardzo dobry sposób na naukę, gdyż wymusza praktykę na
           kursancie.
         </p>
         <br />
-        <h1>Spis notatek</h1>
+        <h1 class="notes__heading">Spis notatek</h1>
         <br />
-        <a href="#t1">Tydzień pierwszy</a> <br />
-        <a href="#t2">Tydzień drugi</a><br />
-        <a href="#t3">Tydzień trzeci</a><br />
-        <a href="#t4">Tydzień czwarty</a><br />
+        <a class="notes__link" href="#t1">Tydzień pierwszy</a> <br />
+        <a class="notes__link" href="#t2">Tydzień drugi</a><br />
+        <a class="notes__link" href="#t3">Tydzień trzeci</a><br />
+        <a class="notes__link" href="#t4">Tydzień czwarty</a><br />
+        <a class="notes__link" href="#t5">Tydzień piąty</a><br />
       </section>
       <section id="t1">
         <h3>Tydzień pierwszy</h3>
@@ -122,12 +129,19 @@
         - podstawowy flow to polecenia: git add . / git commit -m "....."/ git
         push <<br />
       </section>
+      <section id="t5">
+        <h3>Tydzień piąty</h3>
+        <p>
+          Uczymy się kolejnych zasad Java Scriptu.
+          
+        </p>
+      </section>
       <br />
+    </main>
       <footer>
         <b>Frontend jest fajny.</b><br />
         <a href="#top">Wróć na górę</a>
       </footer>
-    </main>
     <script src="main.js"></script>
   </body>
 </html>
