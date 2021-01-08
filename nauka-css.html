@@ -37,7 +37,7 @@
         wyróżnić np. jeden tag od innych wprowadzamy klasy lub oznaczamy przez
         id.<br />
         <br />
-        <img src="css-declaration-small.png" alt="css budowa reguły" width="512px"/>
+        <img class="image" src="css-declaration-small.png" alt="css budowa reguły"/>
         <br />
         Możemy pogrupować elementy za pomocą klas wykorzystując arybut
         (class).<br />
@@ -134,6 +134,19 @@
       zmieniamy tylko unikalne dla niego wartości, nie przepisujemy rzeczy z
       klasy bazowej). <br />
       <br>
+      <h3>TŁA - własności</h3>
+      Tła określamy za pomocą własności <b> background</b>, która ma 8 dodatkowych, dokładniejszych własności:<br>
+      <ul>
+        <li>background-image - określa źródło obrazka w tle</li>
+        <li>background-position - określa pozycję tła względem elemnetu, domyślna wartość to 0 0, czyli górny lewy róg. DO określenia pozycji można używać kierunków, pixeli, procentów</li>
+<li>background-repeat - czyli powtarzalność naszego tła, domyślna wartość to <i>repeat</i></li>  
+<li> background-attachment -  może być scroll/fixed/local; domyślna wartość to jest scroll</li>   
+<li>background-origin - określa w którym miejscu tło powinno się zaczynać. Może być padding-box/ border-box/ content-box. Domyślne to padding-box (rzadko tej własności się używa) </li>
+<li>background-clip - określa, w którym miejscu tło powinno być ucięte. Może być padding-box/ border-box/ content-box. Domyślne to border-box</li> 
+<li>background-color - określa kolor tła. Można ustawić tło półprzezroczystu ustawiając zapis rgba</li>
+<li> background-size -  określa  o jakich wymiarach ma być tło. Domyślna wartość to <i>auto</i>, może mieć równiez wartości: cover/contain albo określamy szerokość i wysokość tła.</li></ul>
+Aby ustawić gragient jako tło warto użyć <a href= https://cssgradient.io/gradient-backgrounds/>kreatora </a>
+
       </main>
       <footer>
         <b>Frontend jest fajny.</b><br />

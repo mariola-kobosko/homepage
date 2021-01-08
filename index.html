@@ -64,6 +64,7 @@
         <a class="notes__link" href="#t3">Tydzień trzeci</a><br />
         <a class="notes__link" href="#t4">Tydzień czwarty</a><br />
         <a class="notes__link" href="#t5">Tydzień piąty</a><br />
+        <a class="notes__link" href="#t6">Tydzień szósty</a><br />
       </section>
       <section id="t1">
         <h3>Tydzień pierwszy</h3>
@@ -133,10 +134,52 @@
         <h3>Tydzień piąty</h3>
         <p>
           Uczymy się kolejnych zasad Java Scriptu.
-          
+          Tworzymy listy i tabele w HTMLu.
         </p>
       </section>
-      <br />
+      <section id="t6">  <h3>Tydzień szósty</h3>
+        <p>
+          Uczymy się tworzyć formularze w HTMLu i stylować je.
+        </p></section>
+      <br /> <h2>Contact form</h2>
+      <form method="POST" action="https://dev.cotenfrontend.pl" class="form">
+<p>
+   <label for="FirstName">Imię</label>
+  <input class="form__input" id="FirstName" value="Mariola">
+</p>
+<p>
+  <label>Nazwisko
+    <input class="form__input" id="FamilyName" name="FamilyName" placeholder="Wpisz nazwisko"> 
+  </label>
+</p>
+<p>
+  <label>E-mail
+    <input class="form__input" type="email" id="email" name="e-mail" placeholder="Wpisz e-mail"> 
+  </label>
+</p>
+<label>Załącznik
+  <input class="form__input" type="file" id="attachment" name="attachment"> 
+</label>
+</p>
+<fieldset>
+  <legend>Adres</legend>
+  <label>Ulica
+    <input class="form__input" id="street" name="street" placeholder="Wpisz ulicę">
+  </label>
+  <label>Miasto
+    <input class="form__input" required id="city" name="city" placeholder="Wpisz nazwę miasta">
+  </label>
+</fieldset>
+<fieldset>
+  <legend>Wiek</legend>
+       <p> <label><input class="form__input" type="radio" id="0-25" name="0-25"> 0-25 </label></p>
+       <p> <label><input class="form__input" type="radio" id="26-50" name="26-50"> 26-50 </label></p>
+       <p> <label><input class="form__input" type="radio" id="51andMore" name="51andMore"> 51 and more </label></p>
+</fieldset>
+<p> <label>Riddle<input class="form__input" type="riddle" id="riddle" name="riddle" value="cotenfrontend"> </label></p>
+<p> <label><input class="form__input" type="checkbox" id="agreement" name="agreement"> Zgadzam się</label></p>
+<p> <input class="form__input" type="submit" value="Wyślij"> </p>
+      </form>
     </main>
       <footer>
         <b>Frontend jest fajny.</b><br />

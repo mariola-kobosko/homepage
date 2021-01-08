@@ -1,54 +1,123 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="normalize.css" rel="stylesheet" type="text/css" />
-   <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navigation">
-            <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
-            <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
-            <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
-            <a class="navigation__link" href="nauka-java-script.html">Nauka Java Script</a>
-          </nav>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+        <a class="navigation__link" href="nauka-java-script.html"
+          >Nauka Java Script</a
+        >
+      </nav>
     </header>
     <main class="main">
-        <header id="top">
-            <h1> NAUKA HTML :)</h1>
-        </headerid>
-        <section>
-            <h2> Budowa znaczników</h2>
-            <<znacznik atrybut="wartość">znacznik atrybut="wartość">treść i znacznik zamykający / </znacznik></znacznik>>
-            <h2> Podstawowe znaczniki </h2>
-            <b>main</b> - główna część dokumentu<br>
-            <b>section</b> - sekcja dokumentu<br>
-            <b>article </b></article>- pojedyńcze, osobne grupy treści <br>
-            <b>header</b> - nagłówek główny <br>
-            <b>footer </b>- stopka strony <br>
-            <b>h1 - h6</b> - tekstowe nagłówki tytułowe<br>
-            <b>p </b>- paragraf<br>
-            <b>br</b> - nowa linia, taki enter, jest to znacznik samozamykający<br>
-            <b>b</b> - pogrubienie, wyróżnienie wizualne tekstu <br>
-            <b>strong </b>- pogrubienie, znaczenie semantyczne <br>
-            <b>i </b>- kursywa, wyróżnienie wizualne tekstu <br>
-            <b>em </b>- kursywa, znaczenie semantyczne <br>
-           <b> a </b>- linki wewnątrz i na zewnątrz dokumentu, atrybut href <br>
-            <b>nav</b> - nawigacja strony. Tworząc nawigację strony wrzucamy ją poza znacznik main, w header <br>
-            <b>img src-</b> obrazek i źródło obrazka<br>
-            <b>alt </b>- tekst alternatywny <br>
-            <br>
-            <img src="unnamed.png" alt="budowa reguły html">
-        </section><br>
-        <b> div</b> - znacznik dodatkowy, wspomagający, nie ma znaczenia semantycznego, używamy, gdy naszą treść nie możemy opakować innym znacznikiem semantycznym <br>
-<br>
-    </main>
-        <footer> <b>Frontend jest fajny.</b><br> <a href="#top">Wróć na górę</a></footer>
-</body>
+      <header id="top">
+        <h1>NAUKA HTML :)</h1>
+      </header>
+      <section>
+        <h2>Budowa znaczników</h2>
+        znacznik atrybut="wartość">treść i znacznik zamykający / > <br><br>
+        <img src="unnamed.png" alt="budowa reguły html" /><br>
+        <h2>Podstawowe znaczniki</h2>
+        <ul>
+          <li><b>main</b> - główna część dokumentu</li>
+          <li><b>section</b> - sekcja dokumentu<br /></li>
+          <li><b>article </b>- pojedyńcze, osobne grupy treści <br /></li>
+          <li><b>header</b> - nagłówek główny <br /></li>
+          <li><b>footer </b>- stopka strony <br /></li>
+          <li><b>h1 - h6</b> - tekstowe nagłówki tytułowe<br /></li>
+          <li><b>p </b>- paragraf<br /></li>
+          <li>
+            <b>br</b> - nowa linia, taki enter, jest to znacznik
+            samozamykający<br />
+          </li>
+          <li><b>b</b> - pogrubienie, wyróżnienie wizualne tekstu <br /></li>
+          <li><b>strong </b>- pogrubienie, znaczenie semantyczne <br /></li>
+          <li><b>i </b>- kursywa, wyróżnienie wizualne tekstu <br /></li>
+          <li><b>em </b>- kursywa, znaczenie semantyczne <br /></li>
+          <li>
+            <b> a </b>- linki wewnątrz i na zewnątrz dokumentu, atrybut href
+            <br />
+          </li>
+          <li>
+            <b>nav</b> - nawigacja strony. Tworząc nawigację strony wrzucamy ją
+            poza znacznik main, w header <br />
+          </li>
+          <li><b>img src-</b> obrazek i źródło obrazka<br /></li>
+          <li><b>alt </b>- tekst alternatywny <br /></li>
+         <li> <b> div</b> - znacznik dodatkowy, wspomagający, nie ma znaczenia
+          semantycznego, używamy, gdy naszą treść nie możemy opakować innym
+          znacznikiem semantycznym <br /></li>
+        </ul>
+      </section>
+      <br />
+      <h2>Tworzenie listy i tabeli</h2>
+      Do tworzenia nieuporządkowanej listy używamy znacznika <b>ul</b>
+      <i>unordered list</i>, natomiast do tworzenia listy uporządkowanej używamy
+      znacznika <b>ol</b> <i>ordered list</i>, Element listy to znacznik
+      <b>li</b> czyli <i>list item</i>. Aby ostylować punktor listy używamy
+      znacznika <b>list-style</b>.<br>
+      Do tworzenia pojęć i definicji używamy znaczników:
+      <ul><li>dl-description list</li>
+    <li>dt- description term</li>
+<li>dd- description details</li>
+</ul>
 
+    
+      <table class="table">
+          <caption>Elementy tabeli</caption>
+          <thead>
+              <tr>
+                  <th>Znacznik</th>
+                  <th>Nazwa znacznika</th>
+                  <th>Zastosowanie</th>
+              </tr><tbody> <tr>
+                      <td>table</td>
+                    <td>table</td>       
+                <td>tabela</td>
+                </tr> <tr>
+                    <td>tr</td>
+                    <td> table row</td>
+                    <td>wiersz tabeli</td>
+                </tr><tr>
+                    <td>td</td>
+                    <td>tabele data (cell)</td>
+                    <td>dane tabeli</td>
+                </tr><tr>
+                    <td>thead</td>
+                    <td>table head</td>
+                    <td>nagłówek tabeli</td>
+                </tr><tr>
+                    <td>th</td>
+                    <td>tabele h...</td>
+                    <td> komórka w nagłówku tabeli</td>
+                </tr><tr>
+                    <td>tbody</td>
+                    <td>table body</td>
+                    <td> ciało tabeli</td>
+                </tr><tr>
+                    <td>caption</td>
+                    <td>caption</td>
+                    <td>opis tabeli</td>
+                </tr>
+              </tbody>
+          </thead>
+      </table><br>
+    </main>
+    <footer>
+      <b>Frontend jest fajny.</b><br />
+      <a href="#top">Wróć na górę</a>
+    </footer>
+  </body>
 </html>
