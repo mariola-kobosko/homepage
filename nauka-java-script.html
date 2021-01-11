@@ -1,59 +1,118 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="normalize.css" rel="stylesheet" type="text/css" />
-   <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navigation">
-            <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
-            <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
-            <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
-            <a class="navigation__link" href="nauka-java-script.html">Nauka Java Script</a>
-          </nav>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+        <a class="navigation__link" href="nauka-java-script.html"
+          >Nauka Java Script</a
+        >
+      </nav>
     </header>
     <main class="main">
-        <header id="top">
-            <h1>
-                NAUKA JAVA SCRIPT :)</h1>
-        </header>
-        <section>
-            Pliki zawierające kod Java Script mają rozszerzenie <b>. js</b> oraz mają swój znacznik <i>script</i>, który umieszczamy na końcu strony, przed zamknięciem znacznika <i> body</i><br>         <span class="blekitny"> Java Script odpowiada za interakcje na stronie </class></span>  <br>
-        </section><br>
-        <section>
-            <h2>ZMIENNE W JS</h2>
-        - LET - zmienne, których połączenie możemy przepinać, ale definiujemy tylko raz! np. let isHappy = false; isHappy = true; isHappy = 'tak'; <br>
-    - CONST - zmienne mające stałe połączenie z jedną wartością, np. const name = 'Maciek'; const age = 31; <br>
--VAR - używane coraz rzadziej <br>
-<h2>Typy proste w JS (primitives)</h2>
-- <b>String</b> - tekst, otaczamy ' lub " (zalecam ')<br>
-- <b>Number</b> - liczba<br>
-- <b>Bigint</b> - duża liczba ;) większa niż 253<br>
-- <b>Boolean </b>- true lub false<br>
-- <b>Null </b>- wartość celowo niezdefiniowana<br>
-- <b>Undefined </b>- brak definicji<br>
-- <b>*symbol </b>- tworzy "unikalne opakowanie"<br>
-<br>
-- Aby dowiedzieć się jakiego typu jest zmienna używamy polecenia "typeof"<br>
-- Nie możemy zmieniać wartości primitive values w JS. To co zmieniamy to połączenie między nimi, a zmiennymi.
-        </section>
-        <section>
-            <h2>Funkcje</h2>
-            <img class="image" src="Funkcje_js.png" alt="budowa_funkcji_js">
-        </section>
-        <section>
-            <h2>OBIEKT</h2>
-            Obiekt jest strukturą danych.
-            </section>
-        <br>
-    </main>
-        <footer> <b>Frontend jest fajny.</b><br> <a href="#top">Wróć na górę</a></footer>
-</body>
+      <header id="top">
+        <h1>NAUKA JAVA SCRIPT :)</h1>
+      </header>
+      <section>
+        Pliki zawierające kod Java Script mają rozszerzenie <b>. js</b> oraz
+        mają swój znacznik <i>script</i>, który umieszczamy na końcu strony,
+        przed zamknięciem znacznika <i> body</i><br />
+        <span class="blekitny">
+          Java Script odpowiada za interakcje na stronie
+        </span>
+        <br />
+      </section>
+      <br />
+      Implementuje rzeczy ze specyfikacji ECMAScript. Język JavaScript składa
+      się z elementów taich jak:
+      <ul>
+        <li>wartości</li>
+        <li>obiekty</li>
+        <li>zmienne</li>
+        <li>funkcje</li>
+        <li>literały</li>
+        <li>opcje porównywania</li>
+      </ul>
 
+      <section>
+        <h2>
+          ZMIENNE W JS - to takie połączenie z naszym wszechświatem wartości.
+          Zmienna to nie wartość, ona tylko wskazuje na naszą wartość.
+        </h2>
+        - LET - zmienne, których połączenie możemy przepinać, ale definiujemy
+        tylko raz! np. let isHappy = false; isHappy = true; isHappy = 'tak';
+        <br />
+        - CONST - zmienne mające stałe połączenie z jedną wartością, np. const
+        name = 'Maciek'; const age = 31; <br />
+        - VAR - używane coraz rzadziej <br />
+        <h2>Typy proste w JS (primitives)</h2>
+        - <b>String</b> - tekst, otaczamy ' lub " (zalecam ')<br />
+        - <b>Number</b> - liczba<br />
+        - <b>Bigint</b> - duża liczba ;) większa niż 253<br />
+        - <b>Boolean </b>- true lub false<br />
+        - <b>Null </b>- wartość celowo niezdefiniowana<br />
+        - <b>Undefined </b>- brak definicji<br />
+        - <b>*symbol </b>- tworzy "unikalne opakowanie"<br />
+        <br />
+        - Aby dowiedzieć się jakiego typu jest zmienna używamy polecenia
+        "typeof"<br />
+        - Nie możemy zmieniać wartości primitive values w JS. To co zmieniamy to
+        połączenie między nimi, a zmiennymi.
+      </section>
+      <section>
+        <h2>Funkcje</h2>
+        <img class="image" src="Funkcje_js.png" alt="budowa_funkcji_js" />
+        Funkcje wykorzystujemy wtedy, gdy mamy jakiś fragment kodu, który się
+        nam powtarza.
+      </section>
+      <section>
+        <h2>OBIEKT</h2>
+        Obiekt jest strukturą danych. Własności obiektów opisujemy tworzą pary w
+        postaci: <i>klucz: wartość,</i> np. <i>levels: 357,</i><br />
+        Klucz powinien byś unikalny w ramach obiektu, wartość -
+        prymitywy/funkcje/zagnieżdzenia.
+      </section>
+      <section>
+        <h2>Wyrażenia logiczne</h2>
+        Porównania
+        <ul>
+          <li>> lewa strona większa od prawej</li>
+          <li>< lewa strona mniejsza od prawej</li>
+          <li>>= lewa strona większa / równa od prawej</li>
+          <li><= lewa strona mniejsza / równa od prawej</li>
+          <li>== obie strony równe</li>
+          <li>=== obie strony równe (sprawdza typeof)</li>
+          <li>!= obie strony różne</li>
+          <li>!== obie strony różne (sprawdza typeof)</li>
+        </ul>
+        Falsy - 6 wartości:
+        <i>
+          false 0 '', "", `` - pusty string null undefined NaN - not a number</i
+        >
+
+        Jeżeli wyrażenie logiczne musi spełnić kilka warunków łączymy je
+        symbolem && czyli AND (oba warunki muszą być prawdą) lub OR || (jeden z
+        warunków jest prawdą). NOT - odwraca wartość wyrażenia logicznego,
+        symbol wykrzyknik ! if (!('JavaScript' == 'Java')) { // ten kod się
+        wykona }
+      </section>
+      <br />
+    </main>
+    <footer>
+      <b>Frontend jest fajny.</b><br />
+      <a href="#top">Wróć na górę</a>
+    </footer>
+  </body>
 </html>

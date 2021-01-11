@@ -9,8 +9,9 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navigation">
+    <header class="header"> 
+      <button class="navigation__button navigation__button--js">MENU</button>
+      <nav class="navigation navigation--js">
         <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
         <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
         <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
@@ -20,10 +21,11 @@
     <main class="main">
         <br />
         <header class="main__header" id="top">
-          <h1 class="main__heading">
+          <h1 class="main__heading main__heading--js">
             <u> Mariola Kobosko - nauka frontendu :) </u>
           </h1>
       </header>
+      <article class="article">
       <section class="about">
       <img
         class="about__portrait"
@@ -36,7 +38,7 @@
     </section>
       <h2 class="dom__js"></h2>
       <section>
-        <h2 class="about__heading">Skąd w ogóle taki pomysł?</h2>
+        <h2 class="about__heading about__heading--js">Skąd w ogóle taki pomysł?</h2>
         <p class="about__description">
           Mój narzeczony stwierdził, że taka wiedza przyda mi się w obecnej
           pracy. Dlatego też zakupił mi kurs frontendu.
@@ -55,8 +57,10 @@
           materiałami umieszczonymi na filmikach oraz wykonać zadanie domowe.
           Jest to bardzo dobry sposób na naukę, gdyż wymusza praktykę na
           kursancie.
-        </p>
+        </p> </section></article>
         <br />
+        <div class="grid">
+        <aside class="aside">
         <h1 class="notes__heading">Spis notatek</h1>
         <br />
         <a class="notes__link" href="#t1">Tydzień pierwszy</a> <br />
@@ -65,7 +69,8 @@
         <a class="notes__link" href="#t4">Tydzień czwarty</a><br />
         <a class="notes__link" href="#t5">Tydzień piąty</a><br />
         <a class="notes__link" href="#t6">Tydzień szósty</a><br />
-      </section>
+      </aside>
+      <article class="article"> 
       <section id="t1">
         <h3>Tydzień pierwszy</h3>
         <p>
@@ -128,7 +133,7 @@
         lokalnie<br />
         - commitujemy jak wprowadzamy jakąś widoczną zmianę do projektu <br />
         - podstawowy flow to polecenia: git add . / git commit -m "....."/ git
-        push <<br />
+        push <br />
       </section>
       <section id="t5">
         <h3>Tydzień piąty</h3>
@@ -140,7 +145,7 @@
       <section id="t6">  <h3>Tydzień szósty</h3>
         <p>
           Uczymy się tworzyć formularze w HTMLu i stylować je.
-        </p></section>
+        </p></section></article> </div>
       <br /> <h2>Contact form</h2>
       <form method="POST" action="https://dev.cotenfrontend.pl" class="form">
 <p>
@@ -156,7 +161,7 @@
   <label>E-mail
     <input class="form__input" type="email" id="email" name="e-mail" placeholder="Wpisz e-mail"> 
   </label>
-</p>
+</p> <p>
 <label>Załącznik
   <input class="form__input" type="file" id="attachment" name="attachment"> 
 </label>
@@ -176,7 +181,7 @@
        <p> <label><input class="form__input" type="radio" id="26-50" name="26-50"> 26-50 </label></p>
        <p> <label><input class="form__input" type="radio" id="51andMore" name="51andMore"> 51 and more </label></p>
 </fieldset>
-<p> <label>Riddle<input class="form__input" type="riddle" id="riddle" name="riddle" value="cotenfrontend"> </label></p>
+<p> <label>Riddle<input class="form__input" id="riddle" name="riddle" value="cotenfrontend"> </label></p>
 <p> <label><input class="form__input" type="checkbox" id="agreement" name="agreement"> Zgadzam się</label></p>
 <p> <input class="form__input" type="submit" value="Wyślij"> </p>
       </form>
