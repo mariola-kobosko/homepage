@@ -18,7 +18,10 @@ background: linear-gradient(90deg, rgba(64,78,124,0.4472163865546218) 0%, rgba(2
 min-width: 320px;
 }
 .image {
-  width: 512px
+  width: 512px;
+  min-height: 250px;
+  width: 100%;
+  margin: 50px auto;
 }
 .grid {
 
@@ -35,15 +38,14 @@ min-width: 320px;
     margin: 0px auto;
 }
 .main__header {
-
 }
 .main__heading {
   color: #07BEB8;
   border: 0.2px solid #07BEB8;
   min-width: 320px;
   max-width: 600px;
-  padding: 30px;
-  margin: 60px auto;
+  padding: 25px;
+  margin: 80px auto;
   display: flex;
   justify-content: center;
 }
@@ -58,6 +60,8 @@ h2 {
 h3 {
   color: #5c82d4;
 }
+
+
 h4 {
   color: #07BEB8;
 }
@@ -74,6 +78,14 @@ h4 {
 .about__heading {
   color: #404E7C;
 }
+.about__heading::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #07BEB8;
+  border-radius: 50%;
+}
 .about__link {
   color: #07BEB8;
 }
@@ -84,6 +96,7 @@ h4 {
   width: 100%;
   display: block;
 }
+
 .navigation {  
   background-color:#260F26;
   width: 100%;
@@ -95,13 +108,11 @@ h4 {
   position: absolute;
   top: 16px;
   right: 16px;
-
 }
 .navigation__link {
   color: #F5E3E0;
   display: block;
   margin: 0 0 5px;
-
 }
 .navigation__link--homepage {
   color: #07BEB8;
@@ -118,16 +129,23 @@ h4 {
 .notes__link {
   color: #07BEB8;
 }
+.notes__link:hover {
+  color: #5c82d4;
+}
 .table {
   width: 100%;
   border: 1px solid;
 }
 
 @media screen and (min-width: 768px) {
+  .main {margin: 20px auto; }
 .grid {
   display: grid;
   grid-template-areas: "aside article";
   column-gap: 20px;}
+  .image {
+    width: 512px;
+  }
  .navigation {  
     background-color:#260F26;
     width: 100%;
@@ -142,6 +160,7 @@ h4 {
     background-color: #F5E3E0;
     width: 150px;
     border: 2px solid #251F47;
+    border-radius: 6px;
     padding: 10px;
     margin: 20px;
     box-sizing: border-box;
@@ -160,6 +179,6 @@ h4 {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  body { background: #F5E3E0;
-  margin: 20px;
-  }
+  body { background: #F5E3E0;}
+  .main { margin: 20px;
+  }}

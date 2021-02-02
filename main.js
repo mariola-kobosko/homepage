@@ -1,3 +1,10 @@
+const menu = document.querySelector('.navigation__button--js');
+
+menu.addEventListener('click', () => { 
+    const nav = document.querySelector('.navigation--js');
+    nav.classList.toggle('navigation--open')
+})
+
 const name = "Mariola";
 const age = "32";
 
@@ -29,11 +36,5 @@ function textChangeing(querySelectorContent, content) {
     const element = document.querySelector(querySelectorContent);
     element.innerHTML = (content);
 }
-textChangeing( '.about__heading--js','Dlaczego?')
+textChangeing( '.about__heading--js',' Dlaczego?')
 
-const menu = document.querySelector('.navigation__button--js');
-
-menu.addEventListener('click', () => { 
-    const nav = document.querySelector('.navigation--js');
-    nav.classList.toggle('navigation--open')
-})

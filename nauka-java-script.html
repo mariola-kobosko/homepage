@@ -9,23 +9,21 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navigation">
-        <a class="navigation__link navigation__link--homepage" href="index.html"
-          >Strona główna</a
-        >
-        <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
-        <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
-        <a class="navigation__link" href="nauka-java-script.html"
-          >Nauka Java Script</a
-        >
-      </nav>
+    <header class="header"> 
+        <button class="navigation__button navigation__button--js">MENU</button>
+        <nav class="navigation navigation--js">
+            <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+            <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+            <a class="navigation__link" href="nauka-java-script.html">Nauka Java Script</a>
+          </nav>
     </header>
     <main class="main">
       <header id="top">
-        <h1>NAUKA JAVA SCRIPT :)</h1>
+        <h1 class="main__heading">NAUKA JAVA SCRIPT :)</h1>
       </header>
-      <section>
+      <section><h2>Czym jest JavaScript?</h2>
+        JavaScript to nie to samo co JAVA (!!!) <br>
         Pliki zawierające kod Java Script mają rozszerzenie <b>. js</b> oraz
         mają swój znacznik <i>script</i>, który umieszczamy na końcu strony,
         przed zamknięciem znacznika <i> body</i><br />
@@ -48,9 +46,9 @@
 
       <section>
         <h2>
-          ZMIENNE W JS - to takie połączenie z naszym wszechświatem wartości.
-          Zmienna to nie wartość, ona tylko wskazuje na naszą wartość.
-        </h2>
+          ZMIENNE W JS </h2>- to takie połączenie z naszym wszechświatem wartości.
+          Zmienna to nie wartość, ona tylko wskazuje na naszą wartość.<br>
+        
         - LET - zmienne, których połączenie możemy przepinać, ale definiujemy
         tylko raz! np. let isHappy = false; isHappy = true; isHappy = 'tak';
         <br />
@@ -74,8 +72,8 @@
       <section>
         <h2>Funkcje</h2>
         <img class="image" src="Funkcje_js.png" alt="budowa_funkcji_js" />
-        Funkcje wykorzystujemy wtedy, gdy mamy jakiś fragment kodu, który się
-        nam powtarza.
+       <p> Funkcje wykorzystujemy wtedy, gdy mamy jakiś fragment kodu, który się
+        nam powtarza.</p>
       </section>
       <section>
         <h2>OBIEKT</h2>
@@ -114,5 +112,6 @@
       <b>Frontend jest fajny.</b><br />
       <a href="#top">Wróć na górę</a>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

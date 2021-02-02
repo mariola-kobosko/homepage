@@ -9,8 +9,9 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navigation">
+    <header class="header"> 
+      <button class="navigation__button navigation__button--js">MENU</button>
+      <nav class="navigation navigation--js">
         <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
         <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
         <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
@@ -19,7 +20,7 @@
     </header>
     <main class="main">
       <header id="top">
-        <h1>NAUKA CSS:)</h1>
+        <h1 class="main__heading">NAUKA CSS:)</h1>
       </header>
       <section>
         <span> <i>CSS odpowiada za prezentcję</i> </span>
@@ -146,11 +147,14 @@
 <li>background-color - określa kolor tła. Można ustawić tło półprzezroczystu ustawiając zapis rgba</li>
 <li> background-size -  określa  o jakich wymiarach ma być tło. Domyślna wartość to <i>auto</i>, może mieć równiez wartości: cover/contain albo określamy szerokość i wysokość tła.</li></ul>
 Aby ustawić gragient jako tło warto użyć <a href= https://cssgradient.io/gradient-backgrounds>kreatora </a>
-
+<h3>PSEUDOELEMENTY I PSEUDOSELEKTORY</h3>
+Dzięki pseudoelementom CSS może tworzyć tresć. Wykorzystujemy do tego własność <i> content</i> Używamy wtedy elemntu ::before  następnie jest treść, a na końcu ewentulnie używamy ::after. Własności tej zwykle używamy do stylowania, wyróżnienia tekstu.
+Istnieją również pseudoklasy, których działanie uzależnione jest od wykonania jakiejś akcji, np.<i> hoover</i>- zmiana koloru linku po najechaniu myszką, <i>visited</i> zmiana linków, które już odwiedziliśmy, <i>focus</i>, <i>first-child</i>, <i>last-child</i> itp.
       </main>
       <footer>
         <b>Frontend jest fajny.</b><br />
         <a href="#top">Wróć na górę</a>
       </footer>
+      <script src="main.js"></script>
   </body>
 </html>
