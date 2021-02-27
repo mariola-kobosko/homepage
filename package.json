@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "sass": "npx node-sass -w scss/style.scss style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/mariola-kobosko/homepage/issues"
   },
-  "homepage": "https://github.com/mariola-kobosko/homepage#readme"
+  "homepage": "https://github.com/mariola-kobosko/homepage#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
 }

@@ -1,44 +1,38 @@
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *, *:before, *:after {
-  box-sizing: inherit;
-}
-footer { 
+  box-sizing: inherit; }
+
+footer {
   color: azure;
-  background-color:#260F26;
+  background-color: #260F26;
   width: 100vw;
   height: 100px;
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
+
 body {
-background: linear-gradient(90deg, rgba(64,78,124,0.4472163865546218) 0%, rgba(255,255,255,1) 50%, rgba(7,190,184,0.4472163865546218) 100%);
-min-width: 320px;
-}
+  background: linear-gradient(90deg, rgba(64, 78, 124, 0.447216) 0%, white 50%, rgba(7, 190, 184, 0.447216) 100%);
+  min-width: 320px; }
+
 .image {
   width: 512px;
   min-height: 250px;
   width: 100%;
-  margin: 50px auto;
-}
-.grid {
+  margin: 50px auto; }
 
-}
 .header {
   background: #260F26;
   min-height: 60px;
   position: fixed;
   top: 0;
-  width: 100%;
-}
+  width: 100%; }
+
 .main {
-    max-width: 1000px;
-    margin: 0px auto;
-}
-.main__header {
-}
+  max-width: 1000px;
+  margin: 0px auto; }
+
 .main__heading {
   color: #07BEB8;
   border: 0.2px solid #07BEB8;
@@ -47,115 +41,99 @@ min-width: 320px;
   padding: 25px;
   margin: 80px auto;
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
+
 h1 {
   color: #251F47;
   border: 0.2px solid #7BE0B8;
-  padding: 10px;
-}
-h2 {
-  color: #404E7C;
-}
-h3 {
-  color: #5c82d4;
-}
+  padding: 10px; }
 
+h2 {
+  color: #404E7C; }
+
+h3 {
+  color: #5c82d4; }
 
 h4 {
-  color: #07BEB8;
-}
-  a {
-    color: #07BEB8;
-  }
+  color: #07BEB8; }
 
-.about {
-}
+a {
+  color: #07BEB8; }
 
-.about__description {
-
-}
 .about__heading {
-  color: #404E7C;
-}
+  color: #404E7C; }
+
 .about__heading::before {
   content: "";
   display: inline-block;
   width: 15px;
   height: 15px;
   background: #07BEB8;
-  border-radius: 50%;
-}
+  border-radius: 50%; }
+
 .about__link {
-  color: #07BEB8;
-}
+  color: #074219; }
+
 .about__portrait {
   border: 10px solid #251F47;
   margin: 50px auto;
   min-height: 300px;
   width: 100%;
-  display: block;
-}
+  display: block; }
 
-.navigation {  
-  background-color:#260F26;
+.navigation {
+  background-color: #260F26;
   width: 100%;
   height: 130px;
- padding: 16px;
- display: none;
-}
-.navigation__button {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-}
-.navigation__link {
-  color: #F5E3E0;
-  display: block;
-  margin: 0 0 5px;
-}
-.navigation__link--homepage {
-  color: #07BEB8;
-}
+  padding: 16px;
+  display: none; }
+  .navigation__button {
+    position: absolute;
+    top: 16px;
+    right: 16px; }
+  .navigation__link {
+    color: #F5E3E0;
+    display: block;
+    margin: 0 0 5px; }
+  .navigation__link--homepage {
+    color: #07BEB8; }
+
 .navigation--open {
-  display: block;
-}
+  display: block; }
 
 .notes__heading {
   color: #251F47;
   border: 0.2px solid #7BE0B8;
-  padding: 10px;
-}
+  padding: 10px; }
+
 .notes__link {
-  color: #07BEB8;
-}
+  color: #07BEB8; }
+
 .notes__link:hover {
-  color: #5c82d4;
-}
+  color: #5c82d4; }
+
 .table {
   width: 100%;
-  border: 1px solid;
-}
+  border: 1px solid; }
 
 @media screen and (min-width: 768px) {
-  .main {margin: 20px auto; }
-.grid {
-  display: grid;
-  grid-template-areas: "aside article";
-  column-gap: 20px;}
+  .main {
+    margin: 20px auto; }
+  .grid {
+    display: grid;
+    grid-template-areas: "aside article";
+    column-gap: 20px; }
   .image {
-    width: 512px;
-  }
- .navigation {  
-    background-color:#260F26;
+    width: 512px; }
+  .navigation {
+    background-color: #260F26;
     width: 100%;
     height: 100px;
     display: flex;
     flex-direction: row;
-  justify-items: center;
-  align-items: center;
-  }
-.navigation__link {
+    justify-items: center;
+    align-items: center; }
+  .navigation__link {
     color: #251F47;
     background-color: #F5E3E0;
     width: 150px;
@@ -165,20 +143,18 @@ h4 {
     margin: 20px;
     box-sizing: border-box;
     display: flex;
-  justify-content: center;
-}
-.navigation__button {
-    display: none;
-}
+    justify-content: center; }
+  .navigation__button {
+    display: none; }
   .about__portrait {
-      border: 10px solid #251F47;
-      margin: 50px auto;
-      height: 400px;
-      width: 500px;
-      display: block;
-  }
-}
+    border: 10px solid #251F47;
+    margin: 50px auto;
+    height: 400px;
+    width: 500px;
+    display: block; } }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  body { background: #F5E3E0;}
-  .main { margin: 20px;
-  }}
+  body {
+    background: #F5E3E0; }
+  .main {
+    margin: 20px; } }
